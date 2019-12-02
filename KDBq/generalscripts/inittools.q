@@ -5,4 +5,4 @@ mmdict:()!()
 
 /functions and tools
 counting:{[x;l] count (l where l=x)};
-buildmap_return:{[l;mmdict] show l; noduplicate: distinct l; counts:counting [;l] each noduplicate; mydict:noduplicate!counts; show asc mydict}
+buildmap:{[l;mmdict] show l; noduplicate:distinct asc l; show noduplicate; counts:counting [;l] each noduplicate; mydict:noduplicate!counts; show mydict}
